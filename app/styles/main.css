@@ -2,36 +2,3 @@
 @import "./layout.css";
 @import "./images.css";
 @import "./responsive.css";
-
-#container {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.slide {
-  display: block;
-  position: absolute;
-  height: 200px !important;
-  width: 200px !important;
-  background: red;
-}
-#container {
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.slide {
-  display: block;
-  position: absolute;
-  height: 200px !important;
-  width: 200px !important;
-  background: red;
-}

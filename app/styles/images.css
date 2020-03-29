@@ -20,4 +20,5 @@
   background-image: url("https://assets.website-files.com/59dfd7cba80ea00001ed564f/5a1411352d9bd300018272fe_noise-ani23.gif");
   background-position: 0px 0px;
   opacity: 0.04;
+  pointer-events: none;
 }
