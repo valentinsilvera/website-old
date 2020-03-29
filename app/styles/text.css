@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "JetBrainsMono";
+  src: url("./Fonts/JetBrainsMono-Medium.eot");
+  src: url("./Fonts/JetBrainsMono-Medium.woff") format("woff"),
+    url("./Fonts/JetBrainsMono-Medium.woff2") format("opentype");
+}
+
+* {
+  font-family: "JetBrainsMono", Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: x-large;
+}
+
+.description {
+  position: relative;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
