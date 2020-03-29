@@ -1,10 +1,10 @@
-$("#parallax_container").mousemove(function(e) {
+$("#container").mousemove(function(e) {
   parallaxIt(e, ".slide", -100);
   parallaxIt(e, "img", -30);
 });
 
 function parallaxIt(e, target, movement) {
-  var $this = $("#bottom_index");
+  var $this = $("#container");
   var relX = e.pageX - $this.offset().left;
   var relY = e.pageY - $this.offset().top;
 
