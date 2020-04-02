@@ -1,6 +1,10 @@
+html,
 body {
   margin: 0px;
-  background-color: #feebd6;
+  background-color: #fef7f0;
+  overflow-x: hidden;
+  max-width: 100%;
+  height: auto !important;
 }
 
 .top_index,
@@ -9,4 +13,20 @@ body {
   height: 100vh;
   width: 100vw;
   margin: 0;
+}
+
+.middle_index {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 40vw;
+  padding: 10vw;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .middle_index {
+    width: 90vw;
+    padding: 5vw;
+  }
 }
