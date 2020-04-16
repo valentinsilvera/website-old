@@ -1,0 +1,17 @@
+#space-scene {
+  position: relative;
+  overflow: hidden;
+  background-color: #191229;
+  width: 100vw;
+  height: 100vh;
+}
+
+#space-scene img {
+  position: absolute;
+  max-width: 100%;
+}
+
+/* #space-scene #planet1,
+#planet1ring {
+  bottom: -40px;
+} */
