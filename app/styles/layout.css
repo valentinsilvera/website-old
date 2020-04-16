@@ -1,32 +1,62 @@
 html,
 body {
   margin: 0px;
-  background-color: #fef7f0;
+  background-color: #fff;
   overflow-x: hidden;
   max-width: 100%;
   height: auto !important;
 }
 
-.top_index,
-.middle_index,
-.bottom_index {
+::-webkit-scrollbar {
+  display: none;
+}
+
+.top-index,
+.middle-index,
+.bottom-index {
   height: 100vh;
   width: 100vw;
   margin: 0;
 }
 
-.middle_index {
+.middle-index {
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: flex-end;
+}
+
+.description {
   width: 40vw;
-  padding: 10vw;
+  margin-right: 5vw;
+}
+
+#bottom-index {
+  position: relative;
+}
+
+#about,
+#works {
+  position: absolute;
+  width: 16px;
+  height: auto;
+  word-wrap: break-word;
+  z-index: 999;
+}
+
+#about {
+  bottom: 1em;
+  left: 1em;
+}
+
+#works {
+  top: 1em;
+  right: 1em;
 }
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
-  .middle_index {
+  .description {
     width: 90vw;
-    padding: 5vw;
+    margin-right: 5vw;
   }
 }
