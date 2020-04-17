@@ -7,8 +7,8 @@
 }
 
 .works-content div h2,
-h3,
-p {
+.works-content div h3,
+.works-content div p {
   margin: 25px;
   color: white;
 }
