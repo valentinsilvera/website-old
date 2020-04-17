@@ -27,10 +27,22 @@ function closeNav() {
   window.scrollTo(0, 3000);
 }
 
+// works modal
+
+/* Open when someone clicks on the span element */
+function openWorks() {
+  document.getElementById("works-modal").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeModal() {
+  document.getElementById("works-modal").style.width = "0%";
+}
+
 // curve transition
 
 let scroll = document.querySelector(".curve");
 window.addEventListener("scroll", function () {
-  let value = 1.5 + window.scrollY / -950;
+  let value = 1.5 + window.scrollY / -850;
   scroll.style.transform = `scaleY(${value})`;
 });

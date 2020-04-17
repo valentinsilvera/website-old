@@ -21,6 +21,7 @@
     </div>
 
     <div id="bottom-index">
+      <!-- curve -->
       <section class="curve-section">
         <span class="curve">
           <img
@@ -29,6 +30,7 @@
           />
         </span>
       </section>
+      <!-- about -->
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
           >&times;</a
@@ -37,8 +39,31 @@
       <span id="navbar-button" onclick="openNav()"
         ><a id="about">ABOUT</a></span
       >
+      <!-- work -->
 
-      <a id="works">WORKS</a>
+      <div id="works-modal" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeModal()"
+          >&times;</a
+        >
+
+        <!-- Overlay content -->
+        <div class="works-content">
+          <div class="work1"></div>
+          <div class="work2"></div>
+          <div class="work3"></div>
+          <div class="work4"></div>
+          <div class="work5"></div>
+          <div class="work6"></div>
+          <div class="work7"></div>
+          <div class="work8"></div>
+        </div>
+      </div>
+
+      <!-- Use any element to open/show the overlay navigation menu -->
+      <span onclick="openWorks()"><a id="works">WORKS</a></span>
+
+      <!-- space scene -->
 
       <section id="space-scene">
         <img
