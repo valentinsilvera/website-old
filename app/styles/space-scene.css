@@ -10,7 +10,26 @@
 
 #space-scene img {
   position: absolute;
-  max-width: 100%;
+  object-fit: fill;
+  max-width: 115vw;
+  max-height: auto;
+  object-position: center;
+}
+
+/* image positioning */
+
+#bg {
+  bottom: 80px;
+  right: 10px;
+}
+
+#planet,
+#ground,
+#person,
+#particles-small,
+#particles-big,
+#flare {
+  bottom: -120px;
 }
 
 /* Curve */
@@ -37,4 +56,20 @@
   z-index: 100;
   width: 100%;
   height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #planet,
+  #ground,
+  #person,
+  #particles-small,
+  #particles-big,
+  #flare {
+    bottom: -80px;
+  }
+
+  #space-scene img {
+    max-width: 130vw;
+  }
 }
