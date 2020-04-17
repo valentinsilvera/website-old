@@ -1,3 +1,5 @@
+// parallax function and how to
+
 document.addEventListener("mousemove", parallax);
 
 function parallax(e) {

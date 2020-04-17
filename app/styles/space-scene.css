@@ -67,9 +67,10 @@
   #particles-big,
   #flare {
     bottom: -80px;
+    right: -200px;
   }
 
   #space-scene img {
-    max-width: 130vw;
+    max-width: 180vw;
   }
 }
