@@ -7,10 +7,6 @@ body {
   height: auto !important;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 .top-index,
 .middle-index,
 .bottom-index {
@@ -18,6 +14,8 @@ body {
   width: 100vw;
   margin: 0;
 }
+
+/* Second part */
 
 .middle-index {
   display: flex;
@@ -27,8 +25,10 @@ body {
 
 .description {
   width: 40vw;
-  margin-right: 5vw;
+  margin-right: 10vw;
 }
+
+/* Third part */
 
 #bottom-index {
   position: relative;
@@ -52,6 +52,8 @@ body {
   top: 1em;
   right: 1em;
 }
+
+/* Responsive */
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
