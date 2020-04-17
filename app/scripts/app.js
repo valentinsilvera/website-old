@@ -26,3 +26,11 @@ function closeNav() {
   document.body.style.top = "";
   window.scrollTo(0, 3000);
 }
+
+// curve transition
+
+let scroll = document.querySelector(".curve");
+window.addEventListener("scroll", function () {
+  let value = 1.5 + window.scrollY / -950;
+  scroll.style.transform = `scaleY(${value})`;
+});
