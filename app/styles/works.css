@@ -1,43 +1,113 @@
-.parent {
+.works-content {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }
 
-/* The Overlay (background) */
-.overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */
-  height: 100%;
+.works-content div h2,
+h3,
+p {
+  margin: 25px;
+  color: white;
+}
+
+.works-content div h3 {
+}
+
+.works-content div {
+  height: 50vh;
+  width: calc(100 / 3) vw;
+}
+
+.works-content :hover {
+  background-color: blue;
+}
+
+.work1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.work2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.work3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+.work5 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.work6 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+.work7 {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+/* The modal (background) */
+.works {
+  /* Height & width depends on how you want to reveal the overlay */
+  height: 100vh;
   width: 0;
   position: fixed; /* Stay in place */
   z-index: 600; /* Sit on top */
   left: 0;
   top: 0;
-  background-color: rgb(0, 0, 0); /* Black fallback color */
-  background-color: rgba(0, 0, 0, 0.9); /* Black w/opacity */
+  background: rgb(228, 162, 160);
+  background: linear-gradient(
+    141deg,
+    rgba(228, 162, 160, 1) 0%,
+    rgba(43, 0, 89, 1) 100%
+  );
   overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  transition: 0.3s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
   right: 0;
 }
 
 /* Position the close button (top right corner) */
-.overlay .closebtn {
+.works .closebtn {
   position: absolute;
-  top: 20px;
-  right: 45px;
+  top: 0;
+  right: 25px;
   font-size: 60px;
+  color: white;
 }
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-  .overlay a {
+@media screen and (max-width: 768px) {
+  .works a {
     font-size: 20px;
   }
-  .overlay .closebtn {
+  .works .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;
+  }
+  .works-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .works-content div {
+    width: 100vw;
+    height: 50vh;
+  }
+
+  .work1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .work2 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .work3 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  .work4 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+  .work5 {
+    grid-area: 5 / 1 / 6 / 2;
+  }
+  .work6 {
+    grid-area: 6 / 1 / 7 / 2;
   }
 }

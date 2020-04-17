@@ -34,11 +34,15 @@ function closeNav() {
 /* Open when someone clicks on the span element */
 function openWorks() {
   document.getElementById("works-modal").style.width = "100%";
+  document.body.style.position = "fixed";
 }
 
 /* Close when someone clicks on the "x" symbol inside the overlay */
-function closeModal() {
+function closeWorks() {
   document.getElementById("works-modal").style.width = "0%";
+  document.body.style.position = "";
+  document.body.style.top = "";
+  window.scrollTo(0, 3000);
 }
 
 // curve transition
