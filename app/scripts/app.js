@@ -59,7 +59,7 @@ function bottom() {
   document.querySelector(".middle-index").scrollIntoView();
   window.setTimeout(function () {
     top();
-  }, 1000);
+  }, 3000);
 }
 
 bottom();
