@@ -4,7 +4,7 @@ body {
   background-color: #fff;
   overflow-x: hidden;
   max-width: 100%;
-  height: auto !important;
+  height: auto;
 }
 
 .top-index,

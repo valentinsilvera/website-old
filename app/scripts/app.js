@@ -53,4 +53,16 @@ window.addEventListener("scroll", function () {
   scroll.style.transform = `scaleY(${value})`;
 });
 
-// show videos on hover:
+// auto scroll down:
+function top() {
+  document.getElementsByClassName("middle-index").scrollIntoView();
+}
+
+function bottom() {
+  document.getElementById("middle-index").scrollIntoView();
+  window.setTimeout(function () {
+    top();
+  }, 1);
+}
+
+bottom();
