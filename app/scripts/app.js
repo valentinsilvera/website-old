@@ -59,9 +59,7 @@ function bottom() {
   document
     .querySelector(".middle-index")
     .scrollIntoView({ block: "end", behavior: "smooth" });
-  window.setTimeout(function () {
-    top();
-  }, 100000);
+  window.setTimeout(bottom, 100000);
 }
 
 bottom();
