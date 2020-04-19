@@ -54,15 +54,12 @@ window.addEventListener("scroll", function () {
 });
 
 // auto scroll down:
-function top() {
-  document.getElementsByClassName("middle-index").scrollIntoView();
-}
 
 function bottom() {
-  document.getElementById("middle-index").scrollIntoView();
+  document.querySelector(".middle-index").scrollIntoView();
   window.setTimeout(function () {
     top();
-  }, 1);
+  }, 1000);
 }
 
 bottom();
