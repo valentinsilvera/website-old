@@ -56,10 +56,11 @@ window.addEventListener("scroll", function () {
 // auto scroll down:
 
 function bottom() {
-  document
-    .querySelector(".middle-index")
-    .scrollIntoView({ block: "end", behavior: "smooth" });
-  window.setTimeout(bottom, 100000);
+  window.setTimeout(function () {
+    document
+      .querySelector(".middle-index")
+      .scrollIntoView({ block: "end", behavior: "smooth" });
+  }, 5000);
 }
 
 bottom();
