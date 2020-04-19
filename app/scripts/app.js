@@ -52,3 +52,5 @@ window.addEventListener("scroll", function () {
   let value = 1.5 + window.scrollY / -850;
   scroll.style.transform = `scaleY(${value})`;
 });
+
+// show videos on hover:

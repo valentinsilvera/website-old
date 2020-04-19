@@ -21,8 +21,19 @@
   width: calc(100 / 3) vw;
 }
 
-.works-content :hover {
-  background-color: blue;
+.works-content div:hover {
+  box-shadow: inset 0 0 0 100vw rgba(90, 60, 120, 0.7);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.work4:hover {
+  background-image: url(../images/work-videos/zombie.gif);
+}
+
+.work5:hover {
+  background-image: url(../images/work-videos/cpar.gif);
 }
 
 .work1 {

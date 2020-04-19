@@ -15,6 +15,12 @@ body {
   margin: 0;
 }
 
+.top-index {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
 /* Second part */
 
 .middle-index {
