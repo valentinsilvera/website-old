@@ -60,8 +60,8 @@ function bottom() {
     .querySelector(".middle-index")
     .scrollIntoView({ block: "end", behavior: "smooth" });
   window.setTimeout(function () {
-    top();
-  }, 6000);
+    bottom();
+  }, 3000);
 }
 
 bottom();
