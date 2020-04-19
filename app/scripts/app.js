@@ -56,7 +56,9 @@ window.addEventListener("scroll", function () {
 // auto scroll down:
 
 function bottom() {
-  document.querySelector(".middle-index").scrollIntoView();
+  document
+    .querySelector(".middle-index")
+    .scrollIntoView({ block: "end", behavior: "smooth" });
   window.setTimeout(function () {
     top();
   }, 3000);
