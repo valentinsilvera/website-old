@@ -61,7 +61,7 @@ function bottom() {
     .scrollIntoView({ block: "end", behavior: "smooth" });
   window.setTimeout(function () {
     top();
-  }, 3000);
+  }, 6000);
 }
 
 bottom();
