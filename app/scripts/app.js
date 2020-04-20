@@ -34,8 +34,8 @@ function closeNav() {
 /* Open when someone clicks on the span element */
 function openWorks() {
   document.getElementById("works-modal").style.width = "100%";
-  window.scrollTo(0, 2500);
   document.body.style.position = "fixed";
+  window.scrollTo(0, 3 * document.documentElement.clientHeight);
 }
 
 /* Close when someone clicks on the "x" symbol inside the overlay */
@@ -43,7 +43,7 @@ function closeWorks() {
   document.getElementById("works-modal").style.width = "0%";
   document.body.style.position = "";
   document.body.style.top = "";
-  window.scrollTo(0, 2300);
+  window.scrollTo(0, 3 * document.documentElement.clientHeight);
 }
 
 // curve transition
