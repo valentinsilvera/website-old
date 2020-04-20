@@ -1,8 +1,3 @@
-import smoothscroll from "smoothscroll-polyfill";
-
-// kick off the polyfill!
-smoothscroll.polyfill();
-
 // parallax function and how to
 
 document.addEventListener("mousemove", parallax);
