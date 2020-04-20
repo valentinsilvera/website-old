@@ -83,6 +83,11 @@
   font-size: 60px;
   color: white;
 }
+.works .close-button-div {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
 
 /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
 @media screen and (max-width: 768px) {

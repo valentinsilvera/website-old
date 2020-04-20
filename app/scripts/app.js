@@ -1,3 +1,8 @@
+import smoothscroll from "smoothscroll-polyfill";
+
+// kick off the polyfill!
+smoothscroll.polyfill();
+
 // parallax function and how to
 
 document.addEventListener("mousemove", parallax);
@@ -34,6 +39,7 @@ function closeNav() {
 /* Open when someone clicks on the span element */
 function openWorks() {
   document.getElementById("works-modal").style.width = "100%";
+  window.scrollTo(0, 2500);
   document.body.style.position = "fixed";
 }
 
@@ -42,7 +48,7 @@ function closeWorks() {
   document.getElementById("works-modal").style.width = "0%";
   document.body.style.position = "";
   document.body.style.top = "";
-  window.scrollTo(0, 3000);
+  window.scrollTo(0, 2300);
 }
 
 // curve transition
@@ -59,8 +65,8 @@ function bottom() {
   window.setTimeout(function () {
     document
       .querySelector(".middle-index")
-      .scrollIntoView({ block: "end", behavior: "smooth" });
-  }, 5000);
+      .scrollIntoView({ behavior: "smooth" });
+  }, 2000);
 }
 
 bottom();
