@@ -34,14 +34,20 @@
         </span>
       </section>
       <!-- about -->
-      <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-          >&times;</a
-        >
+      <div id="about-modal" class="about">
+        <!-- Button to close the overlay navigation -->
+        <div class="close-button-div">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeAbout()"
+            >&times;</a
+          >
+        </div>
+
+        <!-- Overlay content -->
+        <div class="works-content"></div>
       </div>
-      <span id="navbar-button" onclick="openNav()"
-        ><a id="about">ABOUT</a></span
-      >
+
+      <!-- Use any element to open/show the overlay navigation menu -->
+      <span onclick="openAbout()"><a id="about">ABOUT</a></span>
       <!-- work -->
 
       <div id="works-modal" class="works">
@@ -57,28 +63,68 @@
           <div class="work1">
             <h2>The Leek</h2>
             <h3>Web</h3>
+            <section class="work-content" id="work1-content">
+              <p>
+                Work in Progress. Blog style website made from the ground up
+                with HTML, CSS and JS.
+              </p>
+              <a href="#">See on GitHub</a>
+            </section>
           </div>
           <div class="work2">
             <h2>FairVote</h2>
             <h3>Mobile</h3>
+            <section class="work-content" id="work2-content">
+              <p>
+                Team-built app, deployed on the App Store. Made with UIKit.
+                Database on FireBase.
+              </p>
+              <a href="#">See on Behance</a>
+            </section>
           </div>
           <div class="work3">
             <h2>Neon Tic-Tac-Toe</h2>
             <h3>Web</h3>
+            <section class="work-content" id="work3-content">
+              <p>
+                Simple web-based game made with HTML, CSS and JS.
+              </p>
+              <a href="#">See on GitHub</a>
+            </section>
           </div>
           <div class="work4">
             <h2>Zombie Conga</h2>
             <h3>Mobile Game</h3>
+            <section class="work-content" id="work4-content">
+              <p>
+                iOS game made using exclusively SpriteKit. Optimized for iPhone
+                and iPad.
+              </p>
+              <a href="#">See on GitHub</a>
+            </section>
           </div>
           <div class="work5">
             <h2>
-              CPAR: CPR education in AR for iPad
+              CPAR: learn CPR in AR
             </h2>
             <h3>Mobile AR</h3>
+            <section class="work-content" id="work5-content">
+              <p>
+                My submission for WWDC19 Scholarship. Made with ARKit and Swift
+                Playgrounds.
+              </p>
+              <a href="#">See on GitHub</a>
+            </section>
           </div>
           <div class="work6">
-            <h2>California National Parks App</h2>
+            <h2>California Parks App</h2>
             <h3>Mobile</h3>
+            <section class="work-content" id="work6-content">
+              <p>
+                A test app made exclusively with SwiftUI.
+              </p>
+              <a href="#">See on GitHub</a>
+            </section>
           </div>
         </div>
       </div>

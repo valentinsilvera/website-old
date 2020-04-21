@@ -58,10 +58,33 @@ window.addEventListener("scroll", function () {
 
 function bottom() {
   window.setTimeout(function () {
-    document
-      .querySelector(".middle-index")
-      .scrollIntoView({ behavior: "smooth" });
-  }, 2000);
+    smoothScroll(".middle-index", 2000);
+  }, 200);
 }
 
 bottom();
+
+function smoothScroll(target, duration) {
+  var target = document.querySelector(target);
+  let targetPosition = target.getBoundingClientRect().top;
+  let startPosition = window.pageYOffset;
+  let distance = targetPosition - startPosition;
+  let startTime = null;
+
+  function animation(currentTime) {
+    if (startTime === null) startTime = currentTime;
+    let timeElapsed = currentTime - startTime;
+    let run = ease(timeElapsed, startPosition, distance, duration);
+    window.scrollTo(0, run);
+    if (timeElapsed < duration) requestAnimationFrame(animation);
+  }
+
+  function ease(t, b, c, d) {
+    t /= d / 2;
+    if (t < 1) return (c / 2) * t * t + b;
+    t--;
+    return (-c / 2) * (t * (t - 2) - 1) + b;
+  }
+
+  requestAnimationFrame(animation);
+}
