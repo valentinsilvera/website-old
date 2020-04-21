@@ -61,8 +61,10 @@
   background-size: cover;
 }
 
-.work1:hover {
+.work2:hover {
   background-image: url(../images/work-videos/fairvote.png);
+  animation: bgmove ease-in-out 10s infinite reverse;
+  -webkit-animation: bgmove ease-in-out 10s infinite reverse;
 }
 
 .work4:hover {
@@ -176,5 +178,32 @@
   }
   .work6 {
     grid-area: 6 / 1 / 7 / 2;
+  }
+}
+
+/* static background images animation */
+
+@keyframes bgmove {
+  from {
+    background-position: top;
+  }
+  50% {
+    background-position: bottom;
+  }
+  to {
+    background-position: top;
+  }
+}
+
+@-webkit-keyframes bgmove
+/* Safari and Chrome */ {
+  from {
+    background-position: top;
+  }
+  50% {
+    background-position: bottom;
+  }
+  to {
+    background-position: top;
   }
 }

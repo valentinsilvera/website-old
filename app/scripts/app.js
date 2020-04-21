@@ -58,8 +58,8 @@ window.addEventListener("scroll", function () {
 
 function bottom() {
   window.setTimeout(function () {
-    smoothScroll(".middle-index", 1000);
-  }, 200);
+    smoothScroll(".middle-index", 800);
+  }, 800);
 }
 
 bottom();
