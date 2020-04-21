@@ -58,7 +58,7 @@ window.addEventListener("scroll", function () {
 
 function bottom() {
   window.setTimeout(function () {
-    smoothScroll(".middle-index", 2000);
+    smoothScroll(".middle-index", 1000);
   }, 200);
 }
 
