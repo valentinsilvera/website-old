@@ -61,10 +61,18 @@
   background-size: cover;
 }
 
+.work1:hover {
+  background-image: url(../images/work-videos/theleek.gif);
+}
+
 .work2:hover {
   background-image: url(../images/work-videos/fairvote.png);
   animation: bgmove ease-in-out 10s infinite reverse;
   -webkit-animation: bgmove ease-in-out 10s infinite reverse;
+}
+
+.work3:hover {
+  background-image: url(../images/work-videos/tictactoe.gif);
 }
 
 .work4:hover {
