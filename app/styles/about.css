@@ -79,7 +79,8 @@
   margin: 100px 0;
 }
 
-#main-who, #main-what {
+#main-who,
+#main-what {
   margin-left: 20vw;
   margin-bottom: 100px;
 }
@@ -119,7 +120,6 @@
 #about-footer p {
   margin-left: 30vw;
   margin-right: 10vw;
-  margin left: ;
   color: #fff;
 }
 
