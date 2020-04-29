@@ -14,19 +14,18 @@ function parallax(e) {
 }
 
 /* Open the sidenav */
-function openNav() {
-  document.getElementById("mySidenav").style.width = "100%";
-  //fixes the body element
+function openAbout() {
+  document.getElementById("about-modal").style.width = "100%";
   document.body.style.position = "fixed";
+  window.scrollTo(0, 3 * document.documentElement.clientHeight);
 }
 
-/* Close/hide the sidenav */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  //return to previous place on the body
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeAbout() {
+  document.getElementById("about-modal").style.width = "0%";
   document.body.style.position = "";
   document.body.style.top = "";
-  window.scrollTo(0, 3000);
+  window.scrollTo(0, 3 * document.documentElement.clientHeight);
 }
 
 // works modal

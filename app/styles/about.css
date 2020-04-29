@@ -1,101 +1,80 @@
-/* The side navigation menu */
-.sidenav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  height: 100vh; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
+/* The modal (background) */
+.about {
+  /* Height & width depends on how you want to reveal the overlay */
+  height: 100vh;
+  width: 0;
   position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+  z-index: 600; /* Sit on top */
   left: 0;
-  background-color: #dc6ca4;
+  top: 0;
+  background: #fff;
   overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.33s; /* 0.5 second transition effect to slide in the sidenav */
+  transition: 0.2s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  right: 0;
 }
 
-#sidenav-title {
-  display: block;
-  background-image: url(../images/title-black.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 10vh;
-  width: 70vw;
-  margin: 0em;
-  padding: 0em;
-}
-
-#sidenav-links {
-  margin-top: -30px;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-#sidenav-links a {
-  background-color: #000;
-  font-size: 2.5em;
-  padding: 15px;
-  color: #dc6ca4;
-  width: 70vw;
-  text-align: center;
-}
-
-#sidenav-links a:hover {
-  background-color: #fff;
-  transition: none;
-}
-
-#sidenav-social {
-  height: 21px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-bottom: 2em;
-}
-
-#sidenav-social a {
-  color: #000;
-}
-
-/* The navigation menu links */
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #fff;
-  display: block;
-  transition: 0.3s;
-}
-
-/* When you mouse over the navigation links, change their color */
-#sidenav-social a:hover {
-  color: #fff;
-  transition: none;
-}
-
-/* Position and style the close button (top right corner) */
-.sidenav .closebtn {
+/* Position the close button (top right corner) */
+.about .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 50px;
+  font-size: 6rem;
+  color: #9b70bc;
   font-weight: 400;
-  margin-left: 50px;
-  color: #000;
+}
+.about .close-button-div {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 650;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 570px) {
-  .sidenav {
-    padding-top: 15px;
-  }
-  #sidenav-links a {
-    font-size: 2em;
-    padding: 10px;
-  }
+#about-header {
+  height: 92vh;
+  color: #340d63;
+  font-size: 3vw;
+  font-weight: 900;
+  margin-left: 7vw;
+  margin-right: 23vw;
+  position: relative;
+}
+
+#about-header h1 {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+#about-main {
+  height: 200vh;
+  background: #672aa9;
+  position: relative;
+  color: #fff;
+}
+
+#main-background {
+  position: absolute;
+  margin: 0;
+  text-align: center;
+  font-size: 17vw;
+  word-spacing: -7vw;
+  color: #4b1d82;
+  margin-top: 5rem;
+}
+
+#about-footer {
+  background: #672aa9;
+  height: 100vh;
+  color: #fff;
+}
+
+#footer-background {
+  position: absolute;
+  margin: 0;
+  text-align: center;
+  font-size: 17vw;
+  letter-spacing: 2vw;
+  color: #4b1d82;
+  margin-top: 5rem;
 }

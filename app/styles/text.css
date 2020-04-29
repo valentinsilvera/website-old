@@ -1,8 +1,11 @@
 @font-face {
   font-family: "JetBrainsMono";
-  src: url("./Fonts/JetBrainsMono-Medium.eot");
-  src: url("./Fonts/JetBrainsMono-Medium.woff") format("woff"),
-    url("./Fonts/JetBrainsMono-Medium.woff2") format("opentype");
+  src: url("./Fonts/JetBrainsMono-Regular.eot");
+  src: url("./Fonts/JetBrainsMono-Regular.woff") format("woff"),
+    url("./Fonts/JetBrainsMono-Regular.woff2") format("opentype");
+  src: url("./Fonts/JetBrainsMono-Bold.eot");
+  src: url("./Fonts/JetBrainsMono-Bold.woff") format("woff"),
+    url("./Fonts/JetBrainsMono-Bold.woff2") format("opentype");
 }
 
 * {
@@ -10,7 +13,7 @@
 }
 
 p {
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
   font-size: x-large;
   color: #3c4f76;
