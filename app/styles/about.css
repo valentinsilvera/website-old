@@ -17,10 +17,9 @@
 .about .closebtn {
   position: absolute;
   top: 0;
-  right: 25px;
+  right: 30px;
   font-size: 6rem;
   color: #9b70bc;
-  font-weight: 400;
 }
 .about .close-button-div {
   position: -webkit-sticky;
@@ -32,10 +31,10 @@
 #about-header {
   height: 92vh;
   color: #340d63;
-  font-size: 3vw;
-  font-weight: 900;
-  margin-left: 7vw;
-  margin-right: 23vw;
+  font-size: 2.5vw;
+  font-weight: bold;
+  margin-left: 10vw;
+  margin-right: 20vw;
   position: relative;
 }
 
@@ -47,9 +46,13 @@
 }
 
 #about-main {
-  height: 200vh;
+  height: 1000px;
   background: #672aa9;
   position: relative;
+  color: #fff;
+}
+
+#about-main p {
   color: #fff;
 }
 
@@ -60,13 +63,40 @@
   font-size: 17vw;
   word-spacing: -7vw;
   color: #4b1d82;
-  margin-top: 5rem;
+  margin-top: 60px;
+  font-weight: bold;
+}
+
+#main-content {
+  position: absolute;
+  margin-left: 30vw;
+  margin-right: 10vw;
+}
+
+#main-text {
+  font-size: 1.3rem;
+  line-height: 200%;
+  margin: 100px 0;
+}
+
+#main-who, #main-what {
+  margin-left: 20vw;
+  margin-bottom: 100px;
+}
+
+#main-who p {
+  font-size: 1rem;
+}
+
+#main-what p {
+  font-size: 1rem;
 }
 
 #about-footer {
   background: #672aa9;
   height: 100vh;
   color: #fff;
+  position: relative;
 }
 
 #footer-background {
@@ -76,5 +106,39 @@
   font-size: 17vw;
   letter-spacing: 2vw;
   color: #4b1d82;
-  margin-top: 5rem;
+  margin-top: 60px;
+  font-weight: bold;
+}
+
+#footer-content {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+#about-footer p {
+  margin-left: 30vw;
+  margin-right: 10vw;
+  margin left: ;
+  color: #fff;
+}
+
+#links {
+  margin: 0 10vw;
+  margin-top: 30vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#links a {
+  color: #fff;
+}
+
+#link-bar {
+  background: #fff;
+  width: 35vw;
+  height: 4px;
 }
