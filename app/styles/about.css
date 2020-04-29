@@ -142,6 +142,29 @@
 
 #links a {
   color: #fff;
+  position: relative;
+}
+
+#links a:hover {
+  color: rgb(228, 162, 160);
+}
+
+#links a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  transition: all 0.1s ease-in-out;
+  margin-bottom: -15px;
+}
+
+#links a:hover:before {
+  visibility: visible;
+  height: 4px;
 }
 
 #link-bar {
