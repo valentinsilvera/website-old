@@ -19,8 +19,17 @@
   top: 0;
   right: 30px;
   font-size: 6rem;
+  font-weight: 400;
   color: #9b70bc;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.8s ease-in-out;
 }
+
+.about .closebtn:hover {
+  -webkit-transform: rotate(540deg);
+  transform: rotate(540deg);
+}
+
 .about .close-button-div {
   position: -webkit-sticky;
   position: sticky;
@@ -46,7 +55,7 @@
 }
 
 #about-main {
-  height: 1000px;
+  height: 1200px;
   background: #672aa9;
   position: relative;
   color: #fff;
@@ -65,6 +74,16 @@
   color: #4b1d82;
   margin-top: 60px;
   font-weight: bold;
+}
+
+#main-planet {
+  background-image: url(../images/about-planet.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 550px;
+  width: 550px;
+  margin-top: 550px;
 }
 
 #main-content {
@@ -87,16 +106,27 @@
   letter-spacing: 10px;
 }
 
-#main-who p {
-  font-size: 1rem;
-  font-weight: normal;
-  letter-spacing: normal;
+#main-who h2,
+#main-what h2 {
+  font-size: 1.3rem;
+  line-height: 200%;
 }
 
-#main-what p {
+#main-who p,
+#main-what p,
+#main-what li {
   font-size: 1rem;
   font-weight: normal;
   letter-spacing: normal;
+  line-height: 150%;
+}
+
+#main-what ul {
+  list-style-type: square;
+}
+
+#main-what li {
+  margin-bottom: 1rem;
 }
 
 #about-footer {
@@ -146,7 +176,7 @@
 }
 
 #links a:hover {
-  color: rgb(228, 162, 160);
+  color: #e4a2a0;
 }
 
 #links a:before {
