@@ -117,6 +117,10 @@
   background-image: url(../images/work-videos/cpar.gif);
 }
 
+.work6:hover {
+  background-image: url(../images/work-videos/bee.gif);
+}
+
 .work1 {
   grid-area: 1 / 1 / 2 / 2;
 }
