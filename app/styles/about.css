@@ -210,6 +210,10 @@
     margin-top: 20px;
   }
 
+  #about-main {
+    height: 2000px;
+  }
+
   #main-content {
     margin-top: 60px;
     position: absolute;
@@ -218,6 +222,12 @@
   }
 
   #main-planet {
+    background-image: url(../images/about-planet.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 350x auto;
+    width: 100vw;
     margin-top: 400px;
   }
 
