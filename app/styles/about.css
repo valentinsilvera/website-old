@@ -211,7 +211,7 @@
   }
 
   #about-main {
-    height: 2000px;
+    height: 1500px;
   }
 
   #main-content {
@@ -228,11 +228,11 @@
     position: absolute;
     height: 350x auto;
     width: 100vw;
-    margin-top: 400px;
+    margin-top: 500px;
   }
 
   #main-text {
-    margin-bottom: 80vh;
+    margin-bottom: 30vh;
   }
 
   #main-who,
