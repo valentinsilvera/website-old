@@ -6,6 +6,9 @@ Repository of the project for my own professional website and online portfolio. 
 **About** One of the two slide over pages. Animated with JS. Mostly static text.
 **Works** The second slide over page. Includes a collection of six highlighted works I've done in the last year. Fully responsive using grids. On hover each card shows a preview of the project with a link to its GitHub repository.
 
+### Status
+Live [here](https://valentin.work)
+
 ### Technologies 
 Built with HTML, CSS and vanilla JavaScript, I challenged myself to use no dependencies or frameworks to really dig deep on the basics of the language.
 
