@@ -87,3 +87,13 @@ function smoothScroll(target, duration) {
 
   requestAnimationFrame(animation);
 }
+
+// change the title in about for responsiveness
+
+if (document.documentElement.clientWidth < 768)
+  document.getElementById("main-background").textContent =
+    "2 0 1 3 - - - - P R E - S E N T";
+
+if (document.documentElement.clientWidth > 768)
+  document.getElementById("main-background").textContent =
+    "2 0 1 3 - - - P R E S E N T";

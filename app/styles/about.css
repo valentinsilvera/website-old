@@ -202,3 +202,44 @@
   width: 35vw;
   height: 4px;
 }
+
+@media screen and (max-width: 768px) {
+  #main-background {
+    font-size: 27vw;
+    line-height: 150px;
+    margin-top: 20px;
+  }
+
+  #main-content {
+    margin-top: 60px;
+    position: absolute;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  #main-planet {
+    margin-top: 400px;
+  }
+
+  #main-text {
+    margin-bottom: 80vh;
+  }
+
+  #main-who,
+  #main-what {
+    margin-left: 0vw;
+    margin-right: 0vw;
+    margin-bottom: 50px;
+    font-weight: bold;
+  }
+
+  #footer-content p {
+    margin-top: 60px;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  #link-bar {
+    display: none;
+  }
+}
