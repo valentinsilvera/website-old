@@ -1,4 +1,4 @@
-![Logo](/app/images/space-scene/cover.png)
+![Logo](/app/images/git-assets/cover.png)
 ## My professional website / portfolio
 
 Repository of the project for my own professional website and online portfolio. This is as well the semester project for Spring 2020 from CODE University of Applied Sciences. The project is divided in three main parts: 
@@ -19,7 +19,7 @@ The projects uses no external libraries or dependencies, therefore it needs no s
 The website is fully responsive and adapted to both mobile and desktop.
 
 #### Desktop 
-![Desktop](/captions/Desktop.png)
+![Desktop](/app/images/git-assets/preview-desktop.png)
 
 #### Mobile
-![Iphone](/captions/Iphone.png)
+![Mobile](/app/images/git-assets/preview-mobile.png)
