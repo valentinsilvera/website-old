@@ -97,3 +97,10 @@ if (document.documentElement.clientWidth < 768)
 if (document.documentElement.clientWidth > 768)
   document.getElementById("main-background").textContent =
     "2 0 1 3 - - - P R E S E N T";
+
+if (document.documentElement.clientWidth < 768)
+  document.getElementById("footer-background").textContent =
+    "D R O P M E - A L I N E";
+
+if (document.documentElement.clientWidth > 768)
+  document.getElementById("footer-background").textContent = "->GET IN TOUCH";

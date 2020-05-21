@@ -204,14 +204,17 @@
 }
 
 @media screen and (max-width: 768px) {
-  #main-background {
+  #main-background,
+  #footer-background {
     font-size: 27vw;
     line-height: 150px;
     margin-top: 20px;
+    letter-spacing: 0vw;
+    word-spacing: -7vw;
   }
 
   #about-main {
-    height: 1500px;
+    height: 1700px;
   }
 
   #main-content {
@@ -232,7 +235,7 @@
   }
 
   #main-text {
-    margin-bottom: 30vh;
+    margin-bottom: 500px;
   }
 
   #main-who,
@@ -251,5 +254,13 @@
 
   #link-bar {
     display: none;
+  }
+
+  #links {
+    width: 92vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    font-size: 14px;
+    margin-top: 15vh;
   }
 }

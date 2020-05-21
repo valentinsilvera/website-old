@@ -21,11 +21,20 @@
 /* Position the close button (top right corner) */
 .works .closebtn {
   position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 60px;
-  color: white;
+  top: 0 !important;
+  right: 30px;
+  font-size: 6rem !important;
+  font-weight: 400;
+  color: #9b70bc;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.8s ease-in-out;
 }
+
+.works .closebtn:hover {
+  -webkit-transform: rotate(540deg);
+  transform: rotate(540deg);
+}
+
 .works .close-button-div {
   position: -webkit-sticky;
   position: sticky;
